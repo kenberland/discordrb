@@ -516,7 +516,7 @@ module Discordrb
 
         @id = data['id'].to_i
 
-        @author = bot.ensure_user(data['author'] || data['member']['user'])
+#        @author = bot.ensure_user(data['author'] || data['member']['user'])
 
         @attachments = []
         @attachments = data['attachments'].map { |e| Attachment.new(e, self, @bot) } if data['attachments']
